@@ -1,0 +1,45 @@
+
+#
+# Configure Using Gemfile
+# gem 'pg'
+#
+development:
+  adapter: postgresql
+  host: localhost
+  database: fit_db
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  username: mix
+  password: 01121989
+
+test:
+  adapter: postgresql
+  host: localhost
+  database: test_fit_db
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  username: mix
+  password: 01121989
+
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+#   # For details on connection pooling, see rails configuration guide
+#   # http://guides.rubyonrails.org/configuring.html#database-pooling
+#   pool: 5
+
+# development:
+#   <<: *default
+#   database: fitness_development
+
+# test:
+#   <<: *default
+#   database: fitness_test
+
+# production:
+#   <<: *default
+#   database: fitness_production
+#   username: fitness
+#   password: <%= ENV['FITNESS_DATABASE_PASSWORD'] %>
